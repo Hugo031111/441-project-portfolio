@@ -1,0 +1,122 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation bar styles */
+.nav-bar {
+    background-color: #007BFF;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Form and button styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"], /* Ensuring phone input is styled */
+input[type="date"],
+select,
+textarea {
+    width: 100%; /* Sets the width of inputs to be the same */
+    padding: 10px; /* Uniform padding for better visual consistency */
+    margin: 10px 0; /* Uniform margin for spacing */
+    border: 1px solid #ccc; /* Standard border for all inputs */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+    display: block; /* Ensures that each input takes a full line */
+}
+
+input[type="submit"], button {
+    background-color: #28A745; /* Green background for submit buttons */
+    color: white; /* Text color */
+    border: none; /* No border for a cleaner look */
+    padding: 10px 20px; /* Padding for better clickability */
+    margin-top: 10px; /* Margin from the last input field */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor to pointer on hover */
+    width: 100%; /* Makes buttons full width */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #218838; /* Darker shade on hover for visual feedback */
+}
+
+/* Project section styles */
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.project div {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .project div {
+        padding-left: 0;
+    }
+}

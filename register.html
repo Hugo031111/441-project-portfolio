@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js" defer></script>
+<body>
+
+<!-- Navigation bar -->
+<nav class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courseware</a></li>
+        <li><a href="enquiry.html">Register</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<!-- Page name -->
+<div class="page-name">
+    <h1>Register for Your Account</h1>
+</div>
+
+<!-- Registration Form -->
+<section class="registration-form">
+    <form id="registerForm">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+    <button onclick="window.location.href='login.html'">Go to Login</button>
+    <button onclick="window.location.href='index.html'">Back to Home
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Hugo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
