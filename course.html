@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courseware</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js" defer></script>
+<body>
+
+<!-- Navigation bar -->
+<nav class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courseware</a></li>
+        <li><a href="enquiry.html">Register</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <button id="logoutButton">Logout</button>
+    </ul>
+</nav>
+
+<!-- Page name -->
+<div class="page-name">
+    <h1>Courseware</h1>
+</div>
+
+<!-- Course sections -->
+<section class="course-section">
+    <div class="course">
+        <h2>Certificate IV in Business</h2>
+        <p>Price: $15</p>
+        <input type="text" placeholder="Enter quantity">
+        <button>Add to Cart</button>
+        <button class="remove-course">Remove course</button>
+    </div>
+    <div class="course">
+        <h2>Diploma of Project Management</h2>
+        <p>Price: $20</p>
+        <input type="text" placeholder="Enter quantity">
+        <button>Add to Cart</button>
+        <button class="remove-course">Remove course</button>
+    </div>
+    <div class="course">
+        <h2>Certificate III in Information Technology</h2>
+        <p>Price: $25</p>
+        <input type="text" placeholder="Enter quantity">
+        <button>Add to Cart</button>
+        <button class="remove-course">Remove course</button>
+    </div>
+    <div class="course">
+        <h2>Diploma of Leadership and Management</h2>
+        <p>Price: $30</p>
+        <input type="text" placeholder="Enter quantity">
+        <button>Add to Cart</button>
+        <button class="remove-course">Remove course</button>
+    </div>
+    <div class="course">
+        <h2>Certificate IV in Training and Assessment</h2>
+        <p>Price: $35</p>
+        <input type="text" placeholder="Enter quantity">
+        <button>Add to Cart</button>
+        <button class="remove-course">Remove course</button>
+    </div>
+</section>
+
+<!-- Total price section -->
+<section class="total-price-section">
+    <div id="course-details"></div> <!-- Area to display course details -->
+    <h2>Total Price for All Courses</h2>
+    <!-- Total price for all courses will be displayed here -->
+    <button class="clear-cart">Clear Cart</button>
+    <button class="checkout">Checkout</button>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Hugo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
